@@ -1,6 +1,7 @@
 :root {
     /* Define color for gaps and borders */
-    --gapcolor: rgba(128, 128, 128, 0.11);
+    --gapcolor: rgb(238, 238, 238);
+    --gapcolor-dark: rgba(58, 58, 58, 0.493);
 }
 
 body {
@@ -85,18 +86,39 @@ body {
     align-items: center;
     justify-items: start;
 
-    border-radius: 50px;
+    border-radius: 30px;
     background-color: var(--gapcolor);
 
     /* Same heigth relative to the "home"section and aligned in the center */
-    height: 70px;
+    height: 50px;
     align-self: center;
 
     padding-left: 20px;
 }
 
 .news-menu {
+    background-color: var(--gapcolor-dark);
+    border-radius: 50px; /* For hiding the background color bleed */
+
     display: grid;
-    grid-template-rows: 90px;
-    
+    grid-template-rows: 70px;
+    grid-auto-rows: 1fr;
+
+    gap: 3px;
+}
+
+.news-card {
+    background-color: var(--gapcolor);
+    padding: 20px;
+    /* border-radius: 30px; */
+}
+
+.news-card:first-of-type {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.news-card:last-of-type {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
