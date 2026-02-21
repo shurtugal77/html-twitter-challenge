@@ -1,3 +1,8 @@
+:root {
+    /* Define color for gaps and borders */
+    --gapcolor: rgba(128, 128, 128, 0.11);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -36,8 +41,6 @@ body {
 }
 
 .main-menu {
-    /* Define color for gaps and borders */
-    --gapcolor: rgba(128, 128, 128, 0.11);
     background-color: var(--gapcolor);
 
     border-style: none solid none solid;
@@ -46,13 +49,13 @@ body {
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 80px 200px;
+    grid-template-rows: 90px 200px;
     grid-auto-rows: 1fr;
     gap: 2px;
 }
 
 .main-menu > div {
-        background-color: white;
+    background-color: white;
 }
 
 .home {
@@ -64,4 +67,36 @@ body {
 
 .tweet-menu {
     margin-bottom: 10px;
+}
+
+.right-menu {
+    
+    margin-left: 20px;
+    margin-right: 80px;
+
+    display: grid;
+    grid-template-rows: 90px;
+    grid-auto-rows: 1fr;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    justify-items: start;
+
+    border-radius: 50px;
+    background-color: var(--gapcolor);
+
+    /* Same heigth relative to the "home"section and aligned in the center */
+    height: 70px;
+    align-self: center;
+
+    padding-left: 20px;
+}
+
+.news-menu {
+    display: grid;
+    grid-template-rows: 90px;
+    
 }
