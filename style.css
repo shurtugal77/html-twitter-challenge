@@ -1,7 +1,9 @@
 :root {
     /* Define color for gaps and borders */
+    --wutblau: rgb(73, 106, 175);
     --gapcolor: rgb(238, 238, 238);
     --gapcolor-dark: rgba(58, 58, 58, 0.493);
+    
 }
 
 body {
@@ -18,12 +20,28 @@ body {
 
 .left-menu {
     margin: 10px 40px 10px 40px;
+
     display: grid;
-    grid-template-rows: repeat(11, 1fr);
+    grid-template-rows: 90px;
+    grid-auto-rows: 1fr;
+
     align-items: center;
 }
 
-.left-menu > div {
+.logo {
+    height: 100px;
+    justify-self: center;
+}
+
+.logo > img {
+    height: 100px;
+}
+
+.test {
+    color: #AB7C94;
+}
+
+.left-navbar {
     display: grid;
     grid-template-columns: 30px 1fr;
     gap: 10%;
@@ -34,6 +52,14 @@ body {
     font-size: x-large;
     font-weight: bolder;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.icon-svgs {
+    color: blue;
+    fill: blue;
+    height: 1.25rem;
+    width: 1.25rem;
+    max-width: 100%;
 }
 
 .menu-icon {
@@ -99,19 +125,16 @@ body {
 .news-menu {
     background-color: var(--gapcolor-dark);
     border-radius: 50px; /* For hiding the background color bleed */
-
+    
     display: grid;
     grid-template-rows: 70px;
     grid-auto-rows: 1fr;
-
-    gap: 3px;
+    gap: 1px;
 }
 
 .news-card {
     background-color: var(--gapcolor);
-    padding: 20px;
-    /* border-radius: 30px; */
-}
+    padding: 20px;}
 
 .news-card:first-of-type {
     border-top-left-radius: 30px;
