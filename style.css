@@ -44,7 +44,9 @@ body {
 .nav-entry {
     display: grid;
     grid-template-columns: 30px 1fr;
-    gap: 10%;
+
+    /* Gap between Icon and Buttontext */
+    gap: 15%;
     align-items: center;
 
     height: 50px;
