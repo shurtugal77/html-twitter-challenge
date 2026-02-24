@@ -37,11 +37,13 @@ a {
 
 .left-menu {
     margin: 10px 40px 10px 40px;
-
     display: grid;
     grid-template-rows: 100px 450px 150px 1fr;
 
     align-items: center;
+
+    /* Always make the entire grid the height of the viewport minus the margin so that the account details stick to the bottom regardless of the resolution */
+    height: calc(100vh - 10px);
 }
 
 .logo {
@@ -110,6 +112,53 @@ a {
     height: 40px;
 }
 
+.account-container {
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr;
+    align-items: center;
+
+    justify-self: start;
+    align-self: end;
+
+    /* Always stretch the grid container across the max width */
+    width: 100%;
+}
+
+.user-profile-picture {
+    width: 50px;
+    padding: 5px;
+    object-fit: cover;
+    /* border: 1px solid var(--wutblau) ; */
+    border-radius: 100%;
+}
+
+.user-details {
+    justify-self: start;
+}
+
+.user-name {
+    font-size: small;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.user-handle {
+    font-size: small;
+    color: var(--gapcolor-dark);
+}
+
+.show-more {
+    font-size: large;
+    font-weight: bold;
+    color: var(--wutschwarz);
+}
+
+.account-container > .show-more {
+    justify-self: center;
+}
+
+
+
 .main-menu {
     background-color: var(--gapcolor);
 
@@ -133,6 +182,10 @@ a {
     grid-template-columns: 100px 1fr 100px;
     align-items: center;
     justify-items: center;
+}
+
+.home > div {
+
 }
 
 .tweet-menu {
