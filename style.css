@@ -33,6 +33,11 @@ a {
     color: var(--wutschwarz);
 }
 
+.superboldface {
+    font-size: x-large;
+    font-weight: 800;
+}
+
 .main-grid {
     display: grid;
     grid-template-columns: 20% 1fr 30%;
