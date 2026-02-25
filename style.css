@@ -239,6 +239,32 @@ a {
     height: 30px;
 }
 
+/* Tweet card styling */
+.card-container {
+    display: grid;
+
+    grid-template-columns: 80px 1fr 30px;
+}
+
+/* Tweet user icons */
+.card-container > .user-profile-picture {
+    align-self: start;
+    justify-self: center;
+    width: 40px
+}
+
+/* Dot Dot Dot Tweet Menu */
+.card-container > .boldface {
+    align-self: start;
+    justify-self: center;
+}
+
+.card-content-container {
+    display: grid;
+    grid-template-rows: 30px 1fr 30px;
+    align-items: center;
+}
+
 
 .right-menu {
     
