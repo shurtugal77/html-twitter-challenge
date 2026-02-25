@@ -187,6 +187,9 @@ a {
 
     display: grid;
     grid-template-columns: 80px 1fr .3fr;
+    grid-template-rows: 50% 50%;
+
+    align-items: center;
 }
 
 .tweet-container > .user-profile-picture {
@@ -194,10 +197,33 @@ a {
 }
 
 .tweet-container > .button {
-    align-self: end;
-    margin-bottom: 10px;
+    /* align-self: end; */
+    /* margin-bottom: 10px; */
     margin-right: 10px;
     background-color: var(--wutblaulight);
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+
+.tweet-editor-text {
+    color: var(--gapcolor-dark);
+    
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.tweet-editor-icons{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
 }
 
 .right-menu {
