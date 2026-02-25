@@ -3,7 +3,7 @@
 :root {
     /* Define color for gaps and borders */
     --wutblau: rgb(73, 106, 175);
-    --wutblaulight: rgba(73, 105, 175, 0.747);
+    --wutblaulight: rgba(73, 105, 175, 0.575);
     --wutschwarz: rgb(57, 55, 90);
     --gapcolor: rgb(238, 238, 238);
     --gapcolor-dark: rgba(58, 58, 58, 0.493);
@@ -196,10 +196,9 @@ a {
     justify-self: center;
 }
 
-.tweet-container > .button {
-    /* align-self: end; */
-    /* margin-bottom: 10px; */
+.tweet-editor-post-button {
     margin-right: 10px;
+    padding: 0 10px 0 10px ;
     background-color: var(--wutblaulight);
 
     grid-row-start: 2;
@@ -208,9 +207,15 @@ a {
     grid-column-end: 4;
 }
 
+.tweet-editor-post-button:hover {
+    background-color: var(--wutblau);
+}
+
 
 .tweet-editor-text {
     color: var(--gapcolor-dark);
+    font-weight: 600;
+    font-size: large;
     
     grid-row-start: 1;
     grid-row-end: 2;
@@ -218,13 +223,19 @@ a {
     grid-column-end: 3;
 }
 
-.tweet-editor-icons{
+.tweet-editor-container{
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 3;
 
 }
+
+.editor-icon{
+    object-fit: contain;
+    height: 20px;
+}
+
 
 .right-menu {
     
