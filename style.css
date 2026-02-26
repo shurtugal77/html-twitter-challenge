@@ -361,11 +361,18 @@ a {
     align-self: center;
 
     padding-left: 20px;
+
+    gap: 10px;
 }
 
 /* Image in searchbar */
 .search > img {
-    height: 40px;
+    height: 30px;
+}
+
+.search-text {
+    color: var(--wutgrau);
+    font-weight: 500;
 }
 
 .news-menu {
