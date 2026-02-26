@@ -290,9 +290,27 @@ a {
     justify-items: start;
 }
 
+
+.social-image-container {
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    align-items: center;
+    gap: 5px;
+}
+
 /* Images in social-functions */
-.social-functions-container > img {
-    height: 40px;
+.social-image-container > img {
+    height: 25px;
+}
+
+/* Counter in social-functions */
+.social-image-container > span {
+    color: rgba(39, 37, 37, 0.59);
+}
+
+/* Change to the colored shit svg */
+.change-shit-image:hover{
+    content: url(./images/svgs/social-shit-color.svg);
 }
 
 
