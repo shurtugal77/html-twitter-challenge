@@ -399,3 +399,21 @@ a {
     border-bottom-right-radius: 30px;
 }
 
+.news-highlight {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--wutschwarz);
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: 80% 1fr;
+}
+
+.news-text-container {
+    display: grid;
+    grid-template-rows: 20px 1fr 40px;
+
+    align-items: center;
+}
+
