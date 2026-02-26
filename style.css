@@ -279,9 +279,32 @@ a {
     display: grid;
     grid-template-rows: 30px 1fr 30px;
     align-items: center;
-
-
 }
+
+.card-user-details-container {
+    display: grid;
+
+    /* Set the userdetails as close to each other as possible - based on length of the strings */
+    grid-template-columns: repeat(4, min-content);
+
+    place-self: start;
+    gap: 5px;
+
+    align-items: center;
+}
+
+/* Modify font of user-name in cards */
+.card-user-details-container * {
+    font-size: 20px;
+    letter-spacing: normal;
+}
+
+/* Modify font of user handle and timestamp in cards */
+.card-user-details-container > .user-handle {
+    font-size: 15px;
+    font-weight: 500;
+}
+
 
 .social-functions-container {
     display: grid;
