@@ -38,6 +38,10 @@ a {
     font-weight: 800;
 }
 
+.image-contain {
+    object-fit: contain;
+}
+
 .main-grid {
     display: grid;
     grid-template-columns: 20% 1fr 30%;
@@ -79,6 +83,11 @@ a {
     height: 50px;
 }
 
+/* All images in the left navigation bar */
+.nav-entry > img {
+    height: 40px;
+}
+
 /* Left Navigationbuttons hover effect */
 .nav-entry > div:hover {
     color: var(--wutblau);
@@ -107,12 +116,6 @@ a {
     font-size: large;
     font-weight: bold;
     color: white;
-}
-
-
-.menu-icon {
-    object-fit: contain;
-    height: 40px;
 }
 
 .account-container {
@@ -181,6 +184,11 @@ a {
     justify-items: center;
 }
 
+/* Image in the top main home section */
+.home > img {
+    height: 40px;
+}
+
 
 .tweet-container {
     margin-bottom: 10px;
@@ -234,8 +242,8 @@ a {
     gap: 15px;
 }
 
-.editor-icon{
-    object-fit: contain;
+/* Images in tweet editor */
+.tweet-editor-container > img {
     height: 30px;
 }
 
@@ -265,6 +273,16 @@ a {
     align-items: center;
 }
 
+.social-functions-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/* Images in social-functions */
+.social-functions-container > img {
+    height: 20px;
+}
+
 
 .right-menu {
     
@@ -290,6 +308,11 @@ a {
     align-self: center;
 
     padding-left: 20px;
+}
+
+/* Image in searchbar */
+.search > img {
+    height: 40px;
 }
 
 .news-menu {
