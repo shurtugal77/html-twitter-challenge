@@ -5,6 +5,10 @@
     --wutblau: rgb(73, 106, 175);
     --wutblaulight: rgba(73, 105, 175, 0.575);
     --wutschwarz: rgb(57, 55, 90);
+
+    /* for social subgrid */
+    --wutgrau: rgba(39, 37, 37, 0.59);
+
     --gapcolor: rgb(238, 238, 238);
     --gapcolor-dark: rgba(58, 58, 58, 0.493);
     font-family: "Inter", sans-serif;
@@ -252,6 +256,10 @@ a {
     display: grid;
 
     grid-template-columns: 80px 1fr 30px;
+
+    /* Padding for each card */
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* Tweet user icons */
@@ -271,16 +279,20 @@ a {
     display: grid;
     grid-template-rows: 30px 1fr 30px;
     align-items: center;
+
+
 }
 
 .social-functions-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+
+    justify-items: start;
 }
 
 /* Images in social-functions */
 .social-functions-container > img {
-    height: 20px;
+    height: 40px;
 }
 
 
