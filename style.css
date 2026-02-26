@@ -417,3 +417,5 @@ a {
     align-items: center;
 }
 
+/* TODO: fix auto-heights of cards --> Min/Max Content and add cards to fill grey background
+set min height to exact pixel value and max heigth to max-content */
