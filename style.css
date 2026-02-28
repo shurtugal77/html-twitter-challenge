@@ -392,11 +392,6 @@ a {
     padding: 20px;
 }
 
-.news-card:last-of-type {
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-}
-
 .news-highlight {
     font-size: 25px;
     font-weight: bold;
@@ -454,6 +449,23 @@ a {
 .news-image-container > img {
     height: 80px;
     border-radius: 10px;
+}
+
+/* Last entry "show-more" container has rounded corners */
+.news-container:last-of-type {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    /* Just one grid column for the "show more" entry */
+    grid-template-columns: 1fr;
+}
+
+/* Last entry"show-more" content styling */
+.news-container:last-of-type > .news-text-container {
+    /* Just one grid row for the "show more" entry */
+    grid-template-rows: 1fr;
+
+    font-weight: 600;
 }
 
 /* TODO: fix auto-heights of cards --> Min/Max Content and add cards to fill grey background
