@@ -419,7 +419,7 @@ a {
 
 .news-title {
     display: grid;
-    grid-template-columns: repeat(3, min-content);
+    grid-template-columns: repeat(3, max-content);
     gap: 5px;
     
     color: var(--wutgrau);
@@ -447,7 +447,7 @@ a {
 }
 
 .news-image-container > img {
-    height: 80px;
+    width: 150px;
     border-radius: 10px;
 }
 
@@ -468,5 +468,8 @@ a {
     font-weight: 600;
 }
 
-/* TODO: fix auto-heights of cards --> Min/Max Content and add cards to fill grey background
-set min height to exact pixel value and max heigth to max-content */
+/* fix auto-heights of cards --> Min/Max Content and add cards to fill grey background
+set min height to exact pixel value and max heigth to max-content 
+
+    TODO: Fix probably due to an commented out div section - check before changing the code
+*/
