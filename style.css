@@ -380,18 +380,16 @@ a {
     border-radius: 50px; /* For hiding the background color bleed */
     
     display: grid;
-    grid-template-rows: 70px;
-    grid-auto-rows: 1fr;
+    grid-template-rows: min-content;
+    /* grid-auto-rows: 1fr; */
     gap: 1px;
 }
 
-.news-card {
-    background-color: var(--gapcolor);
-    padding: 20px;}
 
-.news-card:first-of-type {
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+/* Background for all news cards without needing a dedicated class */
+.news-menu > div {
+    background-color: var(--gapcolor);
+    padding: 20px;
 }
 
 .news-card:last-of-type {
@@ -403,18 +401,59 @@ a {
     font-size: 25px;
     font-weight: bold;
     color: var(--wutschwarz);
+
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 
 .news-container {
     display: grid;
-    grid-template-columns: 80% 1fr;
+    grid-template-columns: 1fr .5fr;
+    gap: 5px;
+
+    align-items: center;
 }
 
 .news-text-container {
     display: grid;
-    grid-template-rows: 20px 1fr 40px;
+    grid-template-rows: min-content 1fr min-content;
+    gap: 5px;
 
     align-items: center;
+}
+
+.news-title {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    gap: 5px;
+    
+    color: var(--wutgrau);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.news-text {
+    font-weight: bold;
+}
+
+.news-social {
+    color: var(--wutgrau);
+    font-weight: 500;
+    font-size: 12px;
+
+}
+
+.trending-highlight {
+    color: var(--wutblau);
+}
+
+.news-image-container{
+        justify-self: center;
+}
+
+.news-image-container > img {
+    height: 80px;
+    border-radius: 10px;
 }
 
 /* TODO: fix auto-heights of cards --> Min/Max Content and add cards to fill grey background
