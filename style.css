@@ -193,6 +193,10 @@ a {
     height: 40px;
 }
 
+.home > img:hover {
+    content: url(./images/svgs/home-very-angry-face.svg);
+}
+
 
 .tweet-container {
     margin-bottom: 10px;
