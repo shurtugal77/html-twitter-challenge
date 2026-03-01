@@ -41,6 +41,10 @@ a {
     font-weight: bold;
 }
 
+.italictext {
+    font-style: italic;
+}
+
 .hashtag-text {
     color: var(--wutblau);
     font-weight: 500;
