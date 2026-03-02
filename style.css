@@ -477,7 +477,9 @@ a {
 
     display: grid;
     grid-template-rows: 90px;
-    grid-auto-rows: 1fr;
+
+    /* The news cards should take the least amount of space possible */
+    grid-auto-rows: min-content;
 }
 
 .search {
