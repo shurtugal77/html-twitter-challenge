@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-    /* Define color for gaps and borders */
+    /* Define color for elements, gaps and borders */
     --wutblau: rgb(73, 106, 175);
     --wutblaulight: rgba(73, 105, 175, 0.575);
     --wutschwarz: rgb(57, 55, 90);
@@ -69,7 +69,7 @@ a {
 
 
 /* animation effect for current page */
-.text-shadows {
+.active-page-animation {
     text-shadow: 
         3px 3px 0 var(--color-secondary),
         px 6px 0 var(--color-tertiary),
