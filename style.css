@@ -15,6 +15,14 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+
+
+
+    /* animation colors */
+    --color-secondary: rgba(73, 105, 175, 0.315);
+    --color-tertiary: rgba(73, 105, 175, 0.315);
+    --color-quaternary: rgba(73, 105, 175, 0.315);
+    --color-quinary: rgba(73, 105, 175, 0.315);
 }
 
 
@@ -58,6 +66,69 @@ a {
 .image-contain {
     object-fit: contain;
 }
+
+
+/* animation effect for current page */
+.text-shadows {
+    text-shadow: 
+        3px 3px 0 var(--color-secondary),
+        px 6px 0 var(--color-tertiary),
+        9px 9px var(--color-quaternary),
+        12px 12px 0 var(--color-quinary);
+    color: var(--wutblau);
+    animation: shadows 1.2s ease-in infinite;
+}
+@keyframes shadows {
+    0% {
+        text-shadow: none;
+    }
+    10% {
+        transform: translate(-3px, -3px);
+        text-shadow: 3px 3px 0 var(--color-secondary);
+    }
+    20% {
+        transform: translate(-6px, -6px);
+        text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary);
+    }
+    30% {
+        transform: translate(-9px, -9px);
+        text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+    }
+    40% {
+        transform: translate(-12px, -12px);
+        text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+        12px 12px 0 var(--color-quinary);
+    }
+    50% {
+        transform: translate(-12px, -12px);
+        text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+        12px 12px 0 var(--color-quinary);
+    }
+    60% {
+        text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+        12px 12px 0 var(--color-quinary);
+    }
+    70% {
+        text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+    }
+    80% {
+        text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary);
+    }
+    90% {
+        text-shadow: 3px 3px 0 var(--color-secondary);
+    }
+    100% {
+        text-shadow: none;
+    }
+}
+
 
 .main-grid {
     display: grid;
@@ -109,6 +180,14 @@ a {
 .nav-entry > div:hover {
     color: var(--wutblau);
     font-size: x-large;
+
+    /* Disable active page animation on hover */
+    animation: none;
+}
+
+#selected-nav-entry{
+    color: var(--wutblau);
+    font-size: large;
 }
 
 .icon-svgs {
