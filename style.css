@@ -137,7 +137,7 @@ a {
 }
 
 .left-menu {
-    margin: 10px 40px 10px 40px;
+    margin: 10px 40px 10px 100px;
     display: grid;
     grid-template-rows: 100px 450px 150px 1fr;
 
@@ -439,9 +439,9 @@ a {
 }
 
 .right-menu {
-    
-    margin-left: 20px;
-    margin-right: 80px;
+    /* same margins as left-menu */
+    margin-left: 40px;
+    margin-right: 100px;
 
     display: grid;
     grid-template-rows: 90px;
