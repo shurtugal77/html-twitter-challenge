@@ -159,22 +159,43 @@ a {
     /* Always make the entire grid the height of the viewport minus the margin so that the account details stick to the bottom regardless of the resolution */
     height: calc(100vh - 10px);
 }
+
+
+/* Remove right margin first */
+@media screen and (max-width: 1900px) {
+    .right-menu {
+    margin-right: 40px;
+    }
+}
+
+/* Remove left margin second */
 @media screen and (max-width: 1500px) {
     .left-menu {
     margin: 10px 40px 10px 40px;
     }
 }
-@media screen and (max-width: 1000px) {
+
+/* Hide right menu first on small screens */
+@media screen and (max-width: 1200px) {
     .main-grid {
     display: grid;
-    grid-template-columns: 1fr 30%;
+    grid-template-columns: 20% 1fr;
     min-height: 100vh;
+}
+    .right-menu {
+    display: none;
+    }
+}
+
+/* Hide left menu second on small screens */
+@media screen and (max-width: 800px) {
+    .main-grid {
+    grid-template-columns: 1fr;
 }
     .left-menu {
     display: none;
     }
 }
-
 
 
 .logo {
@@ -602,9 +623,3 @@ a {
 
     font-weight: 600;
 }
-
-/* fix auto-heights of cards --> Min/Max Content and add cards to fill grey background
-set min height to exact pixel value and max heigth to max-content 
-
-    TODO: Fix probably due to an commented out div section - check before changing the code
-*/
