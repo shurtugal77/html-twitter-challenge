@@ -20,9 +20,9 @@
 
     /* animation colors */
     --color-secondary: rgba(73, 105, 175, 0.315);
-    --color-tertiary: rgba(73, 105, 175, 0.315);
-    --color-quaternary: rgba(73, 105, 175, 0.315);
-    --color-quinary: rgba(73, 105, 175, 0.315);
+    --color-tertiary: rgba(73, 105, 175, 0.205);
+    --color-quaternary: rgba(73, 105, 175, 0.158);
+    --color-quinary: rgba(73, 105, 175, 0.048);
 }
 
 
